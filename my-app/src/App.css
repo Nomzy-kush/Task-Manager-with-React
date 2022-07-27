@@ -1,19 +1,16 @@
 .main-section {
-  margin: 0;
-  padding: 0;
-  display: block;
   box-sizing: border-box;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .form-div {
-  background: rgba(100, 0, 0, 0.2);
-  width: 50vw;
+  width: 90vw;
+  min-width: 50%;
   height: 15vh;
   border-radius: 15px;
   text-align: center;
   margin: auto;
-  margin-top: 3em;
+  margin-top: 3em;  
 }
 
 .header {
@@ -23,7 +20,7 @@
 
 
 .input {
-  width: 25vw;
+  width: 50%;
   height: 5vh;
   border-right: none;
   border-left: none;
@@ -61,24 +58,43 @@ select {
 }
 
 
+.task-section {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .class-list {
   color: #fff;
   background: rgba(0, 0, 0, 0.8);
-  border-radius: 20px;
-  width: 10vw;
-  margin: 0 auto;
-  margin-bottom: 1em;
-  padding: 1px 3px;
+  border-radius: 10px;
+  padding: 1px;
+  width: 50%;
+  margin: 1em;
+  display: grid;
+  grid-template-columns: 50% 0.5fr 0.5fr;
+  /* gap: 20px; */
+  word-break: 50%;
 }
 
-.task-section {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 1fr 1fr;
+@media screen and (max-width: 768px) {
+  .class-list {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .task-section {
+    margin-top: 2em;
+  }
 }
 
 .pargh {
-  text-align: center;
+  text-align: left;
+  margin-left: 2em;
+  word-break: break-word;
 }
 
 .pargh2 {
@@ -86,17 +102,19 @@ select {
   opacity: 0.5;
 }
 
-.btn-1, .btn-2 {
-  padding: 2.5px 5px;
-  margin-top: 10px;
-  margin-right: 10px;
+.btn-1, .btn-2 {  
     border-radius: 50%;
     border: none;
     outline: none;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
     font-size: 18px;
     cursor: pointer;
+    background: none;
+}
+
+.icon1, .icon2 {
+  fill: rgba(0, 0, 0, 0.8);
+  width: 4vw;
+  height: 3.5vh;
 }
 
 

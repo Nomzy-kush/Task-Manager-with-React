@@ -11,7 +11,7 @@ const App = () => {
 
   useEffect(() => {
     getLocalTodos()
-  });
+  },[]);
 
   useEffect(() => {
     filterHandler()
@@ -20,9 +20,9 @@ const App = () => {
 
   const filterHandler = () => {
     switch(status) {
-      case 'completed' : setFilteredTodos(todos.filter((todo) => todo.completed === true))
+      case 'Completed' : setFilteredTodos(todos.filter((todo) => todo.completed === true))
         break;
-      case 'uncompleted' : setFilteredTodos(todos.filter((todo) => todo.completed === false))
+      case 'Uncompleted' : setFilteredTodos(todos.filter((todo) => todo.completed === false))
        break;
       default : setFilteredTodos(todos)
       break;  

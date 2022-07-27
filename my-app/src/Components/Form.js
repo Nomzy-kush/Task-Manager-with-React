@@ -15,17 +15,21 @@ const Form = ({ inputText, setInputText, todos, setTodos, setStatus }) => {
 
         setInputText('');
 
+        console.log(inputText);
+
     }
 
     const statusHandler = (e) => {
         setStatus(e.target.value)
+
+        console.log(e.target.value)
     }
 
     return (
         <section>
             <form className='form-div'>
         <div>
-                <input type='text' placeholder='Enter New Task Here' className='input' value={inputText} onChange={inputTextHandler}  />
+                <input type='text' placeholder='Enter New Task Here' value={inputText} className='input' onChange={inputTextHandler}  />
                 <button onClick={submitTodoHandler} className='add-button'> Add Task</button>
                 <select onChange={statusHandler}>
                 <option>All</option>
