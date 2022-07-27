@@ -94,7 +94,7 @@ select {
 .pargh {
   text-align: left;
   margin-left: 2em;
-  word-break: break-word;
+  line-break: auto;
 }
 
 .pargh2 {
