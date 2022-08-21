@@ -10,7 +10,7 @@
   border-radius: 15px;
   text-align: center;
   margin: auto;
-  margin-top: 3em;  
+  margin-top: 3em;
 }
 
 .header {
@@ -39,7 +39,7 @@
   border-color: rgba(0, 0, 0, 0.8);
 }
 
-.add-button, select {
+.add-icon, select {
   padding: 3px;
   background: rgba(0, 0, 0, 0.5);
   width: 8em;
@@ -48,10 +48,14 @@
   border-radius: 5px;
   outline: none;
   color: #fff;
+  vertical-align: middle;
 }
-.add-button:hover, select:hover {
+.add-icon:hover, select:hover {
   background: rgba(0, 0, 0, 0.8);
 }
+
+
+
 
 select {
   margin-left: 2em;
@@ -112,9 +116,9 @@ select {
 }
 
 .icon1, .icon2 {
-  fill: rgba(0, 0, 0, 0.8);
-  width: 4vw;
-  height: 3.5vh;
+  color: rgba(0, 0, 0, 0.8);
+  width: 5vw;
+  height: 4.5vh;
 }
 
 

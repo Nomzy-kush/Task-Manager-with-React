@@ -1,4 +1,5 @@
 import React from 'react'
+import AddCircleIcon from '@mui/icons-material/AddCircle';
 
 
 const Form = ({ inputText, setInputText, todos, setTodos, setStatus }) => {
@@ -30,7 +31,7 @@ const Form = ({ inputText, setInputText, todos, setTodos, setStatus }) => {
             <form className='form-div'>
         <div>
                 <input type='text' placeholder='Enter New Task Here' value={inputText} className='input' onChange={inputTextHandler}  />
-                <button onClick={submitTodoHandler} className='add-button'> Add Task</button>
+                <AddCircleIcon onClick={submitTodoHandler} className="add-icon" /> 
                 <select onChange={statusHandler}>
                 <option>All</option>
                 <option>Completed</option>
