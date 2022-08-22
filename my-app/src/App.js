@@ -48,7 +48,7 @@ const App = () => {
 
   return (
     <section className='main-section'>
-      <h1 className='header'>Onome's Task Tracker</h1>
+      <h1 className='header'>My Task Tracker</h1>
       <div className='form-div'>
       <Form inputText={inputText} setInputText={setInputText} todos={todos} setTodos={setTodos} setStatus={setStatus} />
       <Tasklist todos={todos} setTodos={setTodos} filteredTodos={filteredTodos}  />
